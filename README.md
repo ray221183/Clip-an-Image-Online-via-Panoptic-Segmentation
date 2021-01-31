@@ -5,7 +5,6 @@
 
 Demo影片連結： https://youtu.be/_al6dHuo6Zw
 ## 環境建置
-> Model: EPSNet 
-> Backend: Flask 
+> Model: EPSNet  
+> Backend: Flask  
 > Frontend: HTML, CSS, JS, Jinja2 
-
