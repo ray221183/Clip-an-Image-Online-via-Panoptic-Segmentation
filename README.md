@@ -9,10 +9,12 @@ Demo影片連結： https://youtu.be/_al6dHuo6Zw
 > Backend: Flask  
 > Frontend: HTML, CSS, JS, Jinja2 
 ## Citation
-> @article{EPSNet_arxiv,  
->   title={EPSNet: Efficient Panoptic Segmentation Network with Cross-layer Attention Fusion},  
->   author={Chia-Yuan Chang and Shuo-En Chang and P. Hsiao and L. Fu},  
->   journal={ArXiv},  
->   year={2020},  
->   volume={abs/2003.10142}  
-> }
+```
+@article{EPSNet_arxiv,  
+  title={EPSNet: Efficient Panoptic Segmentation Network with Cross-layer Attention Fusion},  
+  author={Chia-Yuan Chang and Shuo-En Chang and P. Hsiao and L. Fu},  
+  journal={ArXiv},  
+  year={2020},  
+  volume={abs/2003.10142}  
+}
+```
