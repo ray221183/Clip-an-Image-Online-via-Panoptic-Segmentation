@@ -1,0 +1,77 @@
+html,
+body {
+	font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #484848;
+	background-color: rgb(255, 255, 255);
+  margin: 0;
+	-webkit-font-smoothing: antialiased;
+  height: 100vh;
+}
+
+.image-viewer__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+  overflow: scroll;
+}
+
+.image-viewer__title {
+	margin: 0;
+	margin-top: 2rem;
+  font-size: 5em;
+}
+
+.image-viewer__main {
+  width: 95vw;
+  margin: auto;
+  white-space: nowrap
+}
+
+
+
+
+.image-viewer__display {
+    padding: 1px;
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+	font-size: 0.6rem;
+    box-shadow: 0vh 0vh 0.5vh 0vh rgb(156, 150, 150);
+    /* border: 1px solid black; */
+}
+
+.image-viewer__display-source-wrapper {
+	position: absolute;
+	font-size: 12px;
+	left: 50%;
+	margin-right: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100em;
+	text-align: center;
+	bottom: 0;
+}
+
+.display {
+	object-fit: contain;
+	width: 50rem;
+    height: 30rem;
+    /* border: 1px solid black; */
+	/* background: url(images/loading.gif) 50% no-repeat; */
+}
+
+.transparent{
+    display: none;
+}
+
+
+.disabled {
+	opacity: 0.2;
+}
+
+.disabled:hover {
+	border-color: transparent !important;
+	cursor: not-allowed;
+}

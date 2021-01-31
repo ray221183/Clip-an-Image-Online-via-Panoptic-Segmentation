@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Viewer</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="{{ url_for('static',filename='css/styles.css') }}"
+        />
+    </head>
+    <body>
+        <!-- Try to implement an HTML that looks like the reference example:
+        ./images/screenshot.png  -->
+        <!-- Please use the class names and IDs as defined in styles.css
+         so that the outlook can be the same as the reference. -->
+        <div class="image-viewer__container">
+            <div class="image-viewer__title">
+                Image View
+            </div>
+            <div class="image-viewer__main">
+                <form runat="server" action="/upload" method="post" enctype='multipart/form-data'>
+                  <span>
+                      <input type="file" id="imgInp" name="file" onchange="readURL(this)">
+                  </span>
+                  <button type="submit">Submit</button>
+                </form>
+                <div class="image-viewer__display">
+                    <img id="display" src="{{ url_for('static', filename='images/loading.gif') }}"/>
+                </div>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
